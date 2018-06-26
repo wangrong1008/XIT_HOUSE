@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>详情页</title>
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../css/plugins.reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../css/home.css">
+
+</head>
+<body class="loaded">
+<div class="wrapper">
+    <header class="top-wrapper">
+        <div class="container">
+            <div class="row">
+                <ul class="channelList">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="#">二手房</a></li>
+                    <li><a href="#">新房</a></li>
+                    <li><a href="#">租房</a></li>
+                    <li><a href="#">房价</a></li>
+                    <li><a href="tool.html" target="_blank">工具</a></li>
+                    <li><a href="#" target="_blank">发布房源</a></li>
+                </ul>
+                <div class="navbar-right">
+                    <div class="login" id="userInfoContainer">
+                        <i class="fa fa-user-circle"></i>&nbsp;
+                        <a id="userNameContainer" href="#" rel="nofollow">用户名</a>&nbsp;&nbsp;
+                        <a id="userSignOut" href="#">退出</a>
+                    </div>
+                    <div class="phone">
+                        <i class="fa fa-phone-square"></i>&nbsp;
+                        <span>热线电话1010-9666</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header">
+        <div class="menu container">
+            <div class="row">
+                <div class="menuLeft">
+                    <a href="#" class="logo"></a>
+                    <ul class="typeList">
+                        <li class="selected"><a href="#" title="厦门在售二手房">在售</a></li>
+                        <li><a href="#" title="厦门成交二手房">成交</a></li>
+                        <li><a href="#" title="厦门小区二手房">小区</a></li>
+                        <li><a href="#" title="厦门房价二手房">房价</a></li>
+                        <li><a href="#" title="厦门地图找房二手房" target="_blank">地图找房</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="search container">
+            <div class="row">
+                <div class="input">
+                    <form id="searchForm" action="#">
+                        <input type="text" id="searchInput" placeholder="试试输入组合条件找房，如 莲花 三居">
+                        <div class="inputRightPart">
+                            <div class="save" id="savedSearchMsg">
+                                <span id="savedSearchCount">0</span>条已保存搜索
+                                <span id="savedSearchArrow" class="downArrow"></span>
+                            </div>
+                            <button type="submit" class="searchButton">&nbsp;<i></i>&nbsp;</button>
+                        </div>
+                    </form>
+                    <div class="searchMsg" id="searchMsgContainer" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sellDetailHeader">
+        <div class="title-wrapper container">
+            <div class="row">
+                <div class="title">
+                    <h1 class="main" title="金林花园大三房出售， 满五少税">金林花园大三房出售， 满五少税</h1>
+                    <div class="sub" title="此房满五年是业主仅有住宅，楼层中等。">此房满五年是业主仅有住宅，楼层中等。</div>
+                </div>
+                <div class="btnContainer">
+                    <div>
+                        <div class="action">
+                            <button id="follow" class="followbtn">已关注</button>
+                            <span id="favCount" class="count">13</span>人关注
+                        </div>
+                        <div class="action">
+                            <button id="addToCart" class="add-to-cart">预约看房</button>
+                            <button class="move-from-cart hide">已加入待看</button>
+                            <span id="cartCount" class="count">2</span>人看过
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="intro container">
+        <div class="row">
+            <a href="index.html">链家网</a>
+            <span class="stp">&nbsp;&gt;&nbsp;</span>
+            <span>当前房源</span>&nbsp;
+        </div>
+    </div>
+    <div class="overview container">
+        <div class="row">
+            <div class="img" id="topImg">
+                <div class="imgContainer">
+                    <img class="new-default-icon defaultImg" src="https://image1.ljcdn.com/350200-inspection/2faace7f-21cd-4730-aa9e-f44ee295e1c8.jpg.710x400.jpg" alt="厅A" style="display: block;"><span style="display: block;">厅A</span>
+                </div>
+                <div class="thumbnail-img" id="thumbnail2">
+                    <div class="pre">&lt;</div>
+                    <ul class="smallpic">
+                        <li class="selected">
+                            <img src="../images/house1.jpg" alt="1">
+                        </li>
+                        <li>
+                            <img src="../images/house2.jpg" alt="1">
+                        </li>
+                        <li>
+                            <img src="../images/house1.jpg" alt="1">
+                        </li>
+                        <li>
+                            <img src="../images/house2.jpg" alt="1">
+                        </li>
+                        <li>
+                            <img src="../images/house1.jpg" alt="1">
+                        </li>
+                        <li>
+                            <img src="../images/house2.jpg" alt="1">
+                        </li>
+                        <li>
+                            <img src="../images/house1.jpg" alt="1">
+                        </li>
+                        <li>
+                            <img src="../images/house2.jpg" alt="1">
+                        </li>
+                        <li>
+                            <img src="../images/house1.jpg" alt="1">
+                        </li>
+                    </ul>
+                    <div class="next">&gt;</div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <span class="total">620</span>
+                    <span class="unit">
+                    <span>万</span>
+                </span>
+                    <div class="text">
+                        <div class="unitPrice">
+                        <span class="unitPriceValue">
+                            53680<i>元/平米</i>
+                        </span>
+                        </div>
+                        <div class="tax">
+                        <span class="taxtext" title="首付186万 税费10万(仅供参考)">
+                            <span>首付186万 </span>
+                            <span>税费</span>
+                            <span>
+                                <span id="PanelTax">10</span>万(仅供参考)
+                            </span>
+                        </span>
+                            <span class="detail" id="lookdetail">详情</span>
+                        </div>
+                    </div>
+                    <div class="removeIcon"></div>
+                </div>
+                <div class="houseInfo">
+                    <div class="room">
+                        <div class="mainInfo">3室1厅</div>
+                        <div class="subInfo">低楼层/共6层</div>
+                    </div>
+                    <div class="type">
+                        <div class="mainInfo" title="南">南</div>
+                        <div class="subInfo">平层/简装</div>
+                    </div>
+                    <div class="area">
+                        <div class="mainInfo">115.5平米</div>
+                        <div class="subInfo">2005年建/板楼</div>
+                    </div>
+                </div>
+                <div class="aroundInfo">
+                    <div class="communityName">
+                        <span class="label">小区名称</span>
+                        <a href="#" target="_blank" class="info ">金林花园</a>
+                        <a href="#around" class="map">地图</a>
+                    </div>
+                    <div class="areaName">
+                        <i></i>
+                        <span class="label">所在区域</span><span class="info">
+                        <a href="#" target="_blank">思明</a>&nbsp;
+                        <a href="#" target="_blank">金鸡亭</a>&nbsp;
+                    </span>
+                        <a href="#" class="supplement" style="color:#394043;"></a>
+                    </div>
+                    <div class="visitTime">
+                        <i></i>
+                        <span class="label">看房时间</span>
+                        <span class="info">有租户需要预约</span>
+                    </div>
+                    <div class="houseRecord">
+                        <span class="label">链家编号</span>
+                        <span class="info">
+                        105100686407
+                    </span>
+                    </div>
+                </div>
+                <div class="brokerInfo clearfix" style="position: relative">
+                    <a class="pull-left" target="_blank" href="#">
+                        <img src="https://image1.ljcdn.com/usercenter/images/uc_ehr_avatar/e45cc834-58cc-43be-a76a-f06b19de319f.jpg.60x80.jpg" alt="">
+                    </a>
+                    <div class="brokerInfoText pull-right">
+                        <div class="brokerName">
+                            <a target="_blank" href="#" class="name">廖小平</a>
+                            <a class="lianjiaim-createtalkAll new-talk" style="display: none;" title="在线咨询">
+                                <span class="im-icon"></span>沟通
+                            </a>
+                        </div>
+                        <div class="evaluate">
+                            评分:5.0/<a href="#">29人评价</a>
+                        </div>
+                        <div class="phone" style="font-size:18px">
+                            4008893067<span>转</span>6073
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-content container clearfix">
+        <div class="row">
+            <div class="box-l">
+                <div class="newwrap baseinform" id="introduction">
+                    <div style="width:700px;">
+                        <h2>
+                            <div class="title">基本信息</div>
+                        </h2>
+                        <div class="introContent">
+                            <div class="base">
+                                <div class="name">基本属性</div>
+                                <div class="content">
+                                    <ul>
+                                        <li><span class="label">房屋户型</span>3室1厅1厨2卫</li>
+                                        <li><span class="label">所在楼层</span>低楼层 (共6层)</li>
+                                        <li><span class="label">建筑面积</span>115.5㎡</li>
+                                        <li><span class="label">户型结构</span>平层</li>
+                                        <li><span class="label">套内面积</span>暂无数据</li>
+                                        <li><span class="label">建筑类型</span>板楼</li>
+                                        <li><span class="label">房屋朝向</span>南</li>
+                                        <li><span class="label">建筑结构</span>钢混结构</li>
+                                        <li><span class="label">装修情况</span>简装</li>
+                                        <li><span class="label">梯户比例</span>一梯四户</li>
+                                        <li><span class="label">配备电梯</span>暂无数据</li>
+                                        <li><span class="label">产权年限</span>70年</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="transaction">
+                                <div class="name">交易属性</div>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            <span class="label">挂牌时间</span>
+                                            <span>2017-03-13</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">交易权属</span>
+                                            <span>商品房</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">上次交易</span>
+                                            <span>2006-06-06</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">房屋用途</span>
+                                            <span>普通住宅</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">房屋年限</span>
+                                            <span>满五年</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">产权所属</span>
+                                            <span>共有</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">抵押信息</span>
+                                            <span style="display:inline-block;width:64%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;vertical-align:middle;" title="有抵押 业主自还">
+                                有抵押 业主自还
+                              </span>
+                                        </li>
+                                        <li>
+                                            <span class="label">房本备件</span>
+                                            <span>已上传房本照片</span>
+                                        </li>
+                                        <li>
+                                            <span class="label">房源编码</span>
+                                            <span>00167677</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="disclaimer" style="padding-top: 10px;">注：房源所示“房屋用途、交易权属、建成年代、产权年限、建筑结构”仅供参考，购房时请以房本信息为准。</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="newwrap baseinform">
+                    <h2>
+                        <div class="title" style="margin-top:50px;">房源特色</div>
+                    </h2>
+                    <div class="introContent showbasemore">
+                        <div class="tags clearfix">
+                            <div class="name">房源标签</div>
+                            <div class="content">
+                                <a class="tag taxfree" href="#">房本满五年</a>
+                                <a class="tag is_see_free" href="#">随时看房</a>
+                            </div>
+                        </div>
+                        <div class="baseattribute clearfix">
+                            <div class="name">小区介绍</div>
+                            <div class="content">
+                                小区一共是两栋楼，中间是个大花园，一栋有电梯一栋没电梯，此小区有三个大门，小区管理严格，安全。
+                            </div>
+                        </div>
+                        <div class="baseattribute clearfix">
+                            <div class="name">权属抵押</div>
+                            <div class="content">
+                                此房产证满五年了,产权是住宅70年，还有一点抵押，业主随时可以解押
+                            </div>
+                        </div>
+                        <div class="baseattribute clearfix">
+                            <div class="name">交通出行</div>
+                            <div class="content">
+                                小区门口莲前西路，人流量，车流量大，出门就是卧龙晓城BRT站，公交车站，交通便利，出行方便
+                            </div>
+                        </div>
+                        <div class="baseattribute clearfix">
+                            <div class="name">核心卖点</div>
+                            <div class="content">
+                                此房满五年是业主仅有住宅，楼层中等。
+                            </div>
+                        </div>
+                        <div class="viewmore">展开更多信息</div>
+                        <div class="disclaimer">注：土地使用起止年限详见业主土地证明材料或查询相关政府部门的登记文件。</div>
+                    </div>
+                </div>
+                <div class="newwrap">
+                    <div class="record" id="record">
+                        <div class="list">
+                            <div class="title">看房记录</div>
+                            <div class="content">
+                                <div class="record-header">
+                                    <div class="item mytime">带看时间</div>
+                                    <div class="item myname">带看经纪人</div>
+                                    <div class="item mytotal">本房总带看</div>
+                                    <div class="phone" style="margin-left:12px;">咨询电话</div>
+                                </div>
+                                <div class="nrow">
+                                    <div class="item mytime">2018-02-23</div>
+                                    <div class="item agentName myname">
+                                        <a target="_blank" href="#">
+                                            <img src="https://image1.ljcdn.com/usercenter/images/uc_ehr_avatar/e45cc834-58cc-43be-a76a-f06b19de319f.jpg.37x37.jpg" alt="">
+                                            <span>廖小平</span>
+                                        </a>
+                                    </div>
+                                    <div class="item mytotal">1次</div>
+                                    <div class="phone">4008893072转8179</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="npanel">
+                            <div class="npanel-title">近7天带看次数</div>
+                            <div class="count">1</div>
+                            <div class="totalCount">- 30日带看<span>1</span>次 -</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pushXinfang">
+        <div class="xinfangPush container">
+            <div class="row">
+                <h3 class="xinfangPushTitle">同总价新房</h3>
+                <ul class="xinfangPushList clearfix">
+                    <li class="xinfangPushItem">
+                        <a class="xinfangPushPic" href="#" data-bl="detail" data-log_id="40001">
+                            <img class="xinfangPushImg" src="../images/house1.jpg" alt="云顶至尊">
+                            <div class="xinfangPushbg"></div>
+                            <div class="xinfangPushDescription">
+                                <div class="title" title="思明－云顶至尊">思明－云顶至尊</div>
+                                <div class="type"><span>住宅</span></div>
+                            </div>
+                        </a>
+                        <div class="xinfangPushInfo">
+                            <p class="xinfangPushArea">4居 - 278~314平</p>
+                            <p class="xinfangPushPrice">
+                            <span class="average">
+                                均价: <span>78000</span> 元/平
+                            </span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="xinfangPushItem">
+                        <a class="xinfangPushPic" href="#" data-bl="detail" data-log_id="40001">
+                            <img class="xinfangPushImg" src="../images/house1.jpg" alt="云顶至尊">
+                            <div class="xinfangPushbg"></div>
+                            <div class="xinfangPushDescription">
+                                <div class="title" title="思明－云顶至尊">思明－云顶至尊</div>
+                                <div class="type"><span>住宅</span></div>
+                            </div>
+                        </a>
+                        <div class="xinfangPushInfo">
+                            <p class="xinfangPushArea">4居 - 278~314平</p>
+                            <p class="xinfangPushPrice">
+                            <span class="average">
+                                均价: <span>78000</span> 元/平
+                            </span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="xinfangPushItem">
+                        <a class="xinfangPushPic" href="#" data-bl="detail" data-log_id="40001">
+                            <img class="xinfangPushImg" src="../images/house1.jpg" alt="云顶至尊">
+                            <div class="xinfangPushbg"></div>
+                            <div class="xinfangPushDescription">
+                                <div class="title" title="思明－云顶至尊">思明－云顶至尊</div>
+                                <div class="type"><span>住宅</span></div>
+                            </div>
+                        </a>
+                        <div class="xinfangPushInfo">
+                            <p class="xinfangPushArea">4居 - 278~314平</p>
+                            <p class="xinfangPushPrice">
+                            <span class="average">
+                                均价: <span>78000</span> 元/平
+                            </span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="xinfangPushItem">
+                        <a class="xinfangPushPic" href="#" data-bl="detail" data-log_id="40001">
+                            <img class="xinfangPushImg" src="../images/house1.jpg" alt="云顶至尊">
+                            <div class="xinfangPushbg"></div>
+                            <div class="xinfangPushDescription">
+                                <div class="title" title="思明－云顶至尊">思明－云顶至尊</div>
+                                <div class="type"><span>住宅</span></div>
+                            </div>
+                        </a>
+                        <div class="xinfangPushInfo">
+                            <p class="xinfangPushArea">4居 - 278~314平</p>
+                            <p class="xinfangPushPrice">
+                            <span class="average">
+                                均价: <span>78000</span> 元/平
+                            </span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="xinfangPushItem">
+                        <a class="xinfangPushPic" href="#" data-bl="detail" data-log_id="40001">
+                            <img class="xinfangPushImg" src="../images/house1.jpg" alt="云顶至尊">
+                            <div class="xinfangPushbg"></div>
+                            <div class="xinfangPushDescription">
+                                <div class="title" title="思明－云顶至尊">思明－云顶至尊</div>
+                                <div class="type"><span>住宅</span></div>
+                            </div>
+                        </a>
+                        <div class="xinfangPushInfo">
+                            <p class="xinfangPushArea">4居 - 278~314平</p>
+                            <p class="xinfangPushPrice">
+                            <span class="average">
+                                均价: <span>78000</span> 元/平
+                            </span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="m-yezhu">
+        <div class="wrap container">
+            <div class="row">
+                <div class="hd">我有房子要卖</div>
+                <ul class="clearfix">
+                    <li class="item-gujia">
+                        <div class="marsk"></div>
+                        <div class="tit">不知道如何定价</div>
+                        <div class="sub-tit">到成交频道查看成交明细</div>
+                        <a href="#" class="btn-link" target="_blank">查成交&nbsp;&gt;</a></li>
+                    <li class="item-maifang">
+                        <div class="marsk"></div>
+                        <div class="tit">把房源委托给链家</div>
+                        <div class="sub-tit">10万+专业经纪人·8000+链家门店</div>
+                        <a href="#" class="btn-link" target="_blank">发布房源&nbsp;&gt;</a></li>
+                    <li class="item-xiazai">
+                        <div class="marsk"></div>
+                        <div class="tit">已有房源在链家销售</div>
+                        <div class="sub-tit">去链家APP业主中心管理委托</div>
+                        <a href="#" class="btn-link" target="_blank">去APP管理委托&nbsp;&gt;</a></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="f-title">
+                    <div class="pull-left">
+                        <ul>
+                            <li><a href="#" rel="nofollow" target="_blank">了解链家</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">关于链家</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">联系我们</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">加入我们</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">隐私声明</a></li>
+                            <li><a href="#" target="_blank">网站地图</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">友情链接</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">管理员登录</a></li>
+                        </ul>
+                    </div>
+                    <div class="pull-right">官方客服 1010 9666</div>
+                </div>
+                <div class="link-box clearfix">
+                    <div class="pull-left">
+                        <div class="tab"><span class="hover">房贷计算器</span></div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="copyright pull-left">链家网（北京）科技有限公司 | 网络经营许可证 京ICP备16057509号-2 | © Copyright©2010-2018
+                        链家网Lianjia.com版权所有
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<script src="../plugins/jquery/jquery.min.js"></script>
+<script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="../plugins/layui/layui.all.js"></script>
+<script src="../plugins/validator/validator.min.js"></script>
+<script src="../plugins/sweetalert/sweetalert2.all.min.js"></script>
+
+<script src="../js/common.js"></script>
+<script src="../js/home.js"></script>
+
+</body>
+</html>

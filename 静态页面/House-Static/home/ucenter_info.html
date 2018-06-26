@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心 - 编辑信息</title>
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../css/plugins.reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../css/home.css">
+
+    <style>
+        body {
+            background: #f5f5f5;
+        }
+
+        .user-main .main-right .tab-pane .file {
+            position: relative;
+            width: 78px;
+            height: 39px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .user-main .main-right p {
+            font-size: 12px;
+            line-height: 30px;
+            color: #999;
+        }
+
+        .user-main .main-right .preview p {
+            color: #333;
+            font-size: 14px;
+            position: relative;
+            top: -10px;
+        }
+
+        .user-main .main-right .preview .preview-box {
+            background: #f5f5f5;
+            height: 196px;
+            padding-top: 47px;
+            box-sizing: content-box;
+        }
+
+        .user-main .main-right .preview .preview-box .box-w {
+            width: 445px;
+        }
+
+        .user-main .main-right .preview .preview-box .box-w div {
+            display: inline-block;
+            vertical-align: middle;
+            box-sizing: content-box;
+        }
+
+        .user-main .main-right .preview .preview-box .preview-3x {
+            width: 120px;
+            height: 120px;
+            overflow: hidden;
+            margin-right: 50px;
+            margin-left: 35px;
+        }
+
+        .user-main .main-right .preview .preview-box .preview-2x {
+            width: 80px;
+            height: 80px;
+            overflow: hidden;
+            margin-right: 50px;
+        }
+
+        .user-main .main-right .preview .preview-box .preview-1x {
+            width: 34px;
+            height: 34px;
+            overflow: hidden;
+        }
+
+        .user-main .main-right .preview .preview-box .preview-3x img,
+        .user-main .main-right .preview .preview-box .preview-2x img,
+        .user-main .main-right .preview .preview-box .preview-1x img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .user-main .main-right .preview .preview-box span {
+            display: inline-block;
+            width: 120px;
+            text-align: center;
+            margin-left: 35px;
+            padding-top: 15px;
+        }
+
+        .user-main .main-right .preview .preview-box span.text-1 {
+            width: 100px;
+            margin-left: 0;
+        }
+
+        .user-main .main-right .suc {
+            display: none;
+        }
+
+        .user-main .main-right .suc span {
+            background: #53ab6c;
+            color: #fff;
+            display: block;
+            width: 85px;
+            height: 35px;
+            line-height: 35px;
+            margin: 20px auto;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .user-main .main-right .suc span:hover {
+            background: #4FAC8C;
+        }
+
+        .user-main .main-right .change-info {
+            width: 350px;
+            margin: 100px auto;
+        }
+
+        .user-main .main-right .change-info li {
+            clear: both;
+            padding-top: 15px;
+            box-sizing: content-box;
+        }
+
+        .user-main .main-right .change-info span {
+            width: 95px;
+            display: inline-block;
+            font-size: 14px;
+        }
+
+        .user-main .main-right .change-info input[type=text],
+        .user-main .main-right .change-info input[type=password] {
+            width: 237px;
+            height: 38px;
+            border: 1px solid #c8c8c8;
+            padding: 0 5px;
+        }
+
+        .lj-btn {
+            width: 335px;
+            height: 40px;
+            padding: 0 5px;
+            background-color: #4fac6a;
+            cursor: pointer;
+            color: #fff;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 40px;
+            -webkit-user-select: none;
+            display: inline-block;
+        }
+
+        a.lj-btn {
+            text-decoration: none;
+        }
+
+        .lj-btn:hover {
+            background-color: #4FAC8C;
+        }
+
+    </style>
+
+</head>
+<body class="loaded">
+<div class="wrapper">
+    <header class="top-wrapper">
+        <div class="container">
+            <div class="row">
+                <ul class="channelList">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="#">二手房</a></li>
+                    <li><a href="#">新房</a></li>
+                    <li><a href="#">租房</a></li>
+                    <li><a href="#">房价</a></li>
+                    <li><a href="tool.html" target="_blank">工具</a></li>
+                    <li><a href="#" target="_blank">发布房源</a></li>
+                </ul>
+                <div class="navbar-right">
+                    <div class="login" id="userInfoContainer">
+                        <i class="fa fa-user-circle"></i>&nbsp;
+                        <a id="userNameContainer" href="#" rel="nofollow">用户名</a>&nbsp;&nbsp;
+                        <a id="userSignOut" href="#">退出</a>
+                    </div>
+                    <div class="phone">
+                        <i class="fa fa-phone-square"></i>&nbsp;
+                        <span>热线电话1010-9666</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="user-main container clearfix">
+        <div class="row">
+            <div class="main-left pull-left">
+                <div class="name">
+                    <img src="https://image1.ljcdn.com/usercenter/images/lianjiauser_avatar/85821f3a-cf07-42e3-9ded-91ed3915f79a.jpg.80x80.png">
+                </div>
+                <div class="user-name">欢迎你，XX用户</div>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">待看清单</a></li>
+                    <li><a href="#">看房日程</a></li>
+                    <li><a href="#">关注的房源</a></li>
+                    <li><a href="#">我的经纪人</a></li>
+                    <li><a href="#">看房记录</a></li>
+                    <li><a href="#">我的委托</a></li>
+                    <li class="active"><a href="#">编辑资料</a></li>
+                </ul>
+            </div>
+            <div class="main-right pull-right">
+                <div class="title">我的账户信息</div>
+                <ul class="tab">
+                    <li class="active" data-target="updatePortrait"><a href="javascript:">上传头像</a></li>
+                    <li data-target="updatePerson"><a href="javascript:">修改信息</a></li>
+                    <li data-target="updatePwd"><a href="javascript:">修改密码</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane" data-target="updatePortrait">
+                        <form action="#" id="uploadImg">
+                            <div class="file">
+                                <input id="file-img" class="hide" type="file" name="avatar">
+                                <a href="javascript:" class="btn btn-success" id="uploadBtn">选择图片</a>
+                            </div>
+                            <div class="preview">
+                                <p>预览</p>
+                                <div class="preview-box">
+                                    <div class="box-w">
+                                        <div class="preview-3x">
+                                            <img src="https://s1.ljcdn.com/feroot/pc/asset/img/user/default-avatar.png?_v=20180223171650444">
+                                        </div>
+                                        <div class="preview-2x">
+                                            <img src="https://s1.ljcdn.com/feroot/pc/asset/img/user/default-avatar.png?_v=20180223171650444">
+                                        </div>
+                                        <div class="preview-1x">
+                                            <img src="https://s1.ljcdn.com/feroot/pc/asset/img/user/default-avatar.png?_v=20180223171650444">
+                                        </div>
+                                        <span class="text-3">120px*120px</span>
+                                        <span class="text-2">80px*80px</span>
+                                        <span class="text-1">34px*34px</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="suc"><span class="sucSubmit">确定</span></div>
+                        </form>
+                    </div>
+                    <div class="tab-pane" data-target="updatePerson">
+                        <form action="#" id="updatePerson">
+                            <ul class="change-info">
+                                <li>
+                                    <span>昵称：</span><input type="text" name="nickName" placeholder="请输入昵称">
+                                </li>
+                                <li>
+                                    <span>性别：</span>
+                                    <input class="radio-success" type="radio" name="sex" value="男">男
+                                    <input class="radio-success" type="radio" name="sex" value="女">女
+                                </li>
+                                <li>
+                                    <span>手机号：</span><input type="text" name="phone" placeholder="请输入手机号">
+                                </li>
+                                <li>
+                                    <span>邮箱地址：</span><input type="text" name="email" placeholder="请输入邮箱地址">
+                                </li>
+                                <li>
+                                    <span>身份证号：</span><input type="text" name="IdCard" placeholder="请输入身份证号">
+                                </li>
+                                <li><a class="infoSubmit lj-btn">保存修改</a></li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="tab-pane" data-target="updatePwd">
+                        <form action="#" id="updatePwd">
+                            <ul class="change-info">
+                                <li>
+                                    <span>输入旧密码：</span><input type="password" name="password" id="password" placeholder="请输入密码">
+                                </li>
+                                <li>
+                                    <span>设置新密码：</span><input type="password" name="newPassword" id="password1" placeholder="请输入新密码">
+                                </li>
+                                <li>
+                                    <span>确认新密码：</span><input type="password" id="password2" placeholder="请确认新密码">
+                                </li>
+                                <li><a class="pwdSubmit lj-btn">保存修改</a></li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="f-title">
+                    <div class="pull-left">
+                        <ul>
+                            <li><a href="#" rel="nofollow" target="_blank">了解链家</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">关于链家</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">联系我们</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">加入我们</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">隐私声明</a></li>
+                            <li><a href="#" target="_blank">网站地图</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">友情链接</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">管理员登录</a></li>
+                        </ul>
+                    </div>
+                    <div class="pull-right">官方客服 1010 9666</div>
+                </div>
+                <div class="link-box clearfix">
+                    <div class="pull-left">
+                        <div class="tab"><span class="hover">房贷计算器</span></div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="copyright pull-left">链家网（北京）科技有限公司 | 网络经营许可证 京ICP备16057509号-2 | © Copyright©2010-2018
+                        链家网Lianjia.com版权所有
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="../plugins/jquery/jquery.min.js"></script>
+<script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="../plugins/layui/layui.all.js"></script>
+<script src="../plugins/validator/validator.min.js"></script>
+<script src="../plugins/sweetalert/sweetalert2.all.min.js"></script>
+
+<script src="../js/common.js"></script>
+<script src="../js/home.js"></script>
+<script>
+    $(function () {
+        // 获取图片路径
+        function fnGetPath (obj) {
+            if (obj) {
+                //古代浏览器,IE7、8、9
+                if (navigator.userAgent.indexOf("MSIE") > 0 && !(navigator.userAgent.indexOf("MSIE 10.0") > 0)) {
+                    //IE7、8、9浏览器特殊处理,要先Select一下获取所选的内容,但是选中情况下不能获取所以要执行blur()再获取
+                    obj.select();
+                    obj.blur();
+                    //IE下取得图片的本地路径
+                    return document.selection.createRange().text;
+                } else {
+                    //如果支持files对象表示是现代浏览器
+                    if (obj.files) {
+                        var objectURL = window.URL.createObjectURL(obj.files[0]);
+
+                        return objectURL;
+                    }
+                    //基本不可能用到
+                    return obj.value;
+                }
+            }
+        }
+
+        $('#uploadBtn').on('click', function () {
+            $('#file-img').trigger('click');
+        });
+
+        $('#file-img').on('change', function () {
+            var that = this ,
+                src = $(this).val();
+            if (src.indexOf(".jpg") > 0 || src.indexOf(".jpeg") > 0 || src.indexOf(".JPG") > 0 || src.indexOf(".JPEG") > 0) {
+                $('.tab-pane[data-target="updatePortrait"] img').attr('src', fnGetPath(that));
+                $('.tab-pane[data-target="updatePortrait"] .suc').show();
+            } else {
+                layer.msg('请上传格式为jpg、jpeg的图片！');
+                $(this).val('');
+            }
+        });
+
+    });
+</script>
+</body>
+</html>

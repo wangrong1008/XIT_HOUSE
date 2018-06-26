@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>租房详情页</title>
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../css/plugins.reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../css/home.css">
+
+    <style>
+        body,
+        .intro {
+            background: #f5f5f6;
+        }
+    </style>
+
+</head>
+<body class="loaded">
+<div class="wrapper">
+    <header class="top-wrapper">
+        <div class="container">
+            <div class="row">
+                <ul class="channelList">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="#">二手房</a></li>
+                    <li><a href="#">新房</a></li>
+                    <li><a href="#">租房</a></li>
+                    <li><a href="#">房价</a></li>
+                    <li><a href="tool.html" target="_blank">工具</a></li>
+                    <li><a href="#" target="_blank">发布房源</a></li>
+                </ul>
+                <div class="navbar-right">
+                    <div class="login" id="userInfoContainer">
+                        <i class="fa fa-user-circle"></i>&nbsp;
+                        <a id="userNameContainer" href="#" rel="nofollow">用户名</a>&nbsp;&nbsp;
+                        <a id="userSignOut" href="#">退出</a>
+                    </div>
+                    <div class="phone">
+                        <i class="fa fa-phone-square"></i>&nbsp;
+                        <span>热线电话1010-9666</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header">
+        <div class="menu container">
+            <div class="row">
+                <div class="menuLeft">
+                    <a href="#" class="logo"></a>
+                    <ul class="typeList">
+                        <li class="selected"><a href="#" title="厦门在售二手房">在售</a></li>
+                        <li><a href="#" title="厦门成交二手房">成交</a></li>
+                        <li><a href="#" title="厦门小区二手房">小区</a></li>
+                        <li><a href="#" title="厦门房价二手房">房价</a></li>
+                        <li><a href="#" title="厦门地图找房二手房" target="_blank">地图找房</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="search container">
+            <div class="row">
+                <div class="input">
+                    <form id="searchForm" action="#">
+                        <input type="text" id="searchInput" placeholder="试试输入组合条件找房，如 莲花 三居">
+                        <div class="inputRightPart">
+                            <div class="save" id="savedSearchMsg">
+                                <span id="savedSearchCount">0</span>条已保存搜索
+                                <span id="savedSearchArrow" class="downArrow"></span>
+                            </div>
+                            <button type="submit" class="searchButton">&nbsp;<i></i>&nbsp;</button>
+                        </div>
+                    </form>
+                    <div class="searchMsg" id="searchMsgContainer" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="intro container">
+        <div class="row">
+            <a href="index.html">链家网</a>
+            <span class="stp">&nbsp;&gt;&nbsp;</span>
+            <span>当前房源</span>&nbsp;
+        </div>
+    </div>
+    <div class="content-wrapper container">
+        <div class="row">
+            <div class="title-wrapper leaseDetail">
+                <div class="content">
+                    <div class="title">
+                        <h1 class="main">未来海岸浪琴湾 3室2厅 3500元</h1>
+                        <div class="sub">这个经纪人很懒，没写核心卖点</div>
+                    </div>
+                    <div class="btnContainer ">
+                        <button id="follow">关注房源</button>
+                    </div>
+                </div>
+            </div>
+            <div class="overview clearfix">
+                <div class="img" id="topImg">
+                    <div class="imgContainer">
+                        <img class="new-default-icon defaultImg" src="https://image1.ljcdn.com/350200-inspection/2faace7f-21cd-4730-aa9e-f44ee295e1c8.jpg.710x400.jpg" alt="厅A" style="display: block;"><span style="display: block;">厅A</span>
+                    </div>
+                    <div class="thumbnail-img" id="thumbnail2">
+                        <div class="pre">&lt;</div>
+                        <ul class="smallpic">
+                            <li class="selected">
+                                <img src="../images/house1.jpg" alt="1">
+                            </li>
+                            <li>
+                                <img src="../images/house2.jpg" alt="1">
+                            </li>
+                            <li>
+                                <img src="../images/house1.jpg" alt="1">
+                            </li>
+                            <li>
+                                <img src="../images/house2.jpg" alt="1">
+                            </li>
+                            <li>
+                                <img src="../images/house1.jpg" alt="1">
+                            </li>
+                            <li>
+                                <img src="../images/house2.jpg" alt="1">
+                            </li>
+                            <li>
+                                <img src="../images/house1.jpg" alt="1">
+                            </li>
+                            <li>
+                                <img src="../images/house2.jpg" alt="1">
+                            </li>
+                            <li>
+                                <img src="../images/house1.jpg" alt="1">
+                            </li>
+                        </ul>
+                        <div class="next">&gt;</div>
+                    </div>
+                </div>
+                <div class="content zf-content">
+                    <div class="price">
+                        <span class="total">3500</span>
+                        <span class="unit">
+                            <span>元/月</span>
+                        </span>
+                    </div>
+                    <div class="zf-room">
+                        <p class="lf">
+                            <i>面积：</i>141.94平米
+                        </p>
+                        <p class="lf">
+                            <i>房屋户型：</i>3室2厅2卫
+                        </p>
+                        <p class="lf">
+                            <i>楼层：</i>低楼层 (共17层)
+                        </p>
+                        <p class="lf">
+                            <i>房屋朝向：</i>北
+                        </p>
+                        <div class="clearfix"></div>
+                        <p>
+                            <i>地铁：</i>暂无数据
+                        </p>
+                        <p>
+                            <i>小区：</i>
+                            <a href="#">未来海岸浪琴湾</a>
+                            -
+                            <a href="#">19套出租中</a>
+                        </p>
+                        <p>
+                            <i>位置：</i>
+                            <a href="#">海沧</a>
+                            <a href="#">未来海岸北师大</a>
+                        </p>
+                        <p class="lf">
+                            <i>时间：</i>5天前发布
+                        </p>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="brokerInfo clearfix">
+                        <a href="#">
+                            <img src="https://image1.ljcdn.com/usercenter/images/uc_ehr_avatar/15dfb55b-7a2d-42fe-a9e0-49bceff5e6fe.jpg.300x400.png" alt="">
+                        </a>
+                        <div class="brokerInfoText">
+                            <div class="brokerName">
+                                <a href="#" class="name">应陈雪</a>
+                                <span class="tag ">助理经纪人</span>
+                            </div>
+                            <div class="evaluate">
+                            <span class="rate">
+                                  评分:5.0/<a href="#">2人评价</a>
+                            </span>
+                                <span class="time">本房带看：0次</span>
+                            </div>
+                            <div class="phone">
+                                4008893271
+                                <span>转</span>
+                                5476
+                            </div>
+                        </div>
+                    </div>
+                    <div class="houseRecord">
+                        <span class="houseNum">链家编号：105101224811</span>
+                        <div class="pull-right">
+                            <a href="javascript:;" class="report">虚假房源举报</a>
+                            <a href="#" target="blank" class="detail">假一罚百细则</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-wrapper introduction-wrapper container" id="introduction">
+        <div class="row">
+            <div class="introduction">
+                <div class="title">房源介绍</div>
+                <div class="introContent">
+                    <div class="base">
+                        <div class="name">基本属性</div>
+                        <div class="content">
+                            <ul>
+                                <li><span class="label">租赁方式：</span>暂无数据</li>
+                                <li>
+                                    <span class="label">付款方式：</span>
+                                    暂无数据
+                                </li>
+                                <li><span class="label">房屋现状：</span>暂无数据</li>
+                                <li><span class="label">供暖方式：</span>暂无数据</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="name">房源特色</div>
+                        <div class="zf-tag">
+                            <ul class="se">
+                                <li class="tag11 ">
+                                    <span></span>
+                                    衣柜
+                                </li>
+                                <li class="tag12 ">
+                                    <span></span>
+                                    桌椅
+                                </li>
+                                <li class="tag2 ">
+                                    <span></span>
+                                    电视
+                                </li>
+                                <li class="tag3 ">
+                                    <span></span>
+                                    冰箱
+                                </li>
+                                <li class="tag4 ">
+                                    <span></span>
+                                    洗衣机
+                                </li>
+                                <li class="tag5 ">
+                                    <span></span>
+                                    空调
+                                </li>
+                                <li class="tag10 ">
+                                    <span></span>
+                                    热水器
+                                </li>
+                                <li class="tag13 ">
+                                    <span></span>
+                                    微波炉
+                                </li>
+                                <li class="tag6 ">
+                                    <span></span>
+                                    暖气
+                                </li>
+                                <li class="tag7 ">
+                                    <span></span>
+                                    宽带
+                                </li>
+                                <li class="tag9 ">
+                                    <span></span>
+                                    天然气
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="featureContent">
+                            <div class="noData">暂无房源介绍</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nrecord container" id="nrecord">
+        <div class="row">
+            <div class="list">
+                <div class="title">看房记录</div>
+                <div class="content">
+                    <div class="header">
+                        <div class="item">带看时间</div>
+                        <div class="item">带看经纪人</div>
+                        <div class="item">本房总带看</div>
+                        <div class="phone">咨询电话</div>
+                    </div>
+                    <div class="nrow"><span class="noData">暂无看房记录</span></div>
+                </div>
+            </div>
+            <div class="npanel">
+                <div class="title">近7天带看次数</div>
+                <div class="count">0</div>
+                <div class="totalCount">- 总带看<span>0</span>次 -</div>
+            </div>
+        </div>
+    </div>
+    <div class="push container">
+        <div class="row">
+            <div class="content">
+                <div class="title">好房为你推荐 </div>
+                <ul>
+                    <li>
+                        <div class="pic">
+                            <a href="#">
+                                <img src="../images/house1.jpg" alt="">
+                            </a>
+                            <span>3200元</span>
+                        </div>
+                        <div class="title">
+                            <span class="name">
+                                <a href="#">新宝成花园</a>
+                            </span>
+                            <span class="info">3室2厅/130平米</span>
+                        </div>
+                        <div class="desc">
+                            <span class="front"></span>
+                            <span class="back"></span>
+                            <span class="info">综合推荐</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <a href="#">
+                                <img src="../images/house2.jpg" alt="">
+                            </a>
+                            <span>3800元</span>
+                        </div>
+                        <div class="title">
+                            <span class="name"><a href="https://xm.lianjia.com/zufang/105101209188.html">禹洲尊海</a></span>
+                            <span class="info">4室2厅/111平米</span>
+                        </div>
+                        <div class="desc">
+                            <span class="front"></span>
+                            <span class="back"></span>
+                            <span class="info">附近小区相似房源</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <a href="#" data-bl="list">
+                                <img src="../images/house1.jpg" alt="">
+                            </a>
+                            <span>4000元</span>
+                        </div>
+                        <div class="title">
+                            <span class="name">
+                                <a href="#">未来海岸浪琴湾</a>
+                            </span>
+                            <span class="info">4室2厅/202平米</span>
+                        </div>
+                        <div class="desc">
+                            <span class="front"></span>
+                            <span class="back"></span>
+                            <span class="info">同小区相似房源</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <a href="#" data-bl="list">
+                                <img src="../images/house2.jpg" alt="">
+                            </a>
+                            <span>4000元</span>
+                        </div>
+                        <div class="title">
+                            <span class="name">
+                                <a href="#">未来海岸浪琴湾</a>
+                            </span>
+                            <span class="info">4室2厅/202平米</span>
+                        </div>
+                        <div class="desc">
+                            <span class="front"></span>
+                            <span class="back"></span>
+                            <span class="info">同小区相似房源</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="f-title">
+                    <div class="pull-left">
+                        <ul>
+                            <li><a href="#" rel="nofollow" target="_blank">了解链家</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">关于链家</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">联系我们</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">加入我们</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">隐私声明</a></li>
+                            <li><a href="#" target="_blank">网站地图</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">友情链接</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">管理员登录</a></li>
+                        </ul>
+                    </div>
+                    <div class="pull-right">官方客服 1010 9666</div>
+                </div>
+                <div class="link-box clearfix">
+                    <div class="pull-left">
+                        <div class="tab"><span class="hover">房贷计算器</span></div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="copyright pull-left">链家网（北京）科技有限公司 | 网络经营许可证 京ICP备16057509号-2 | © Copyright©2010-2018
+                        链家网Lianjia.com版权所有
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<script src="../plugins/jquery/jquery.min.js"></script>
+<script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="../plugins/layui/layui.all.js"></script>
+<script src="../plugins/validator/validator.min.js"></script>
+<script src="../plugins/sweetalert/sweetalert2.all.min.js"></script>
+
+<script src="../js/common.js"></script>
+<script src="../js/home.js"></script>
+
+</body>
+</html>

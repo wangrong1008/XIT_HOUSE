@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表页</title>
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../plugins/sumoselect/sumoselect.min.css">
+
+    <link rel="stylesheet" href="../css/plugins.reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body class="loaded">
+<div class="wrapper">
+    <header class="top-wrapper">
+        <div class="container">
+            <div class="row">
+                <ul class="channelList">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="#">二手房</a></li>
+                    <li><a href="#">新房</a></li>
+                    <li><a href="#">租房</a></li>
+                    <li><a href="#">房价</a></li>
+                    <li><a href="tool.html" target="_blank">工具</a></li>
+                    <li><a href="#" target="_blank">发布房源</a></li>
+                </ul>
+                <div class="navbar-right">
+                    <div class="login" id="userInfoContainer">
+                        <i class="fa fa-user-circle"></i>&nbsp;
+                        <a id="userNameContainer" href="#" rel="nofollow">用户名</a>&nbsp;&nbsp;
+                        <a id="userSignOut" href="#">退出</a>
+                    </div>
+                    <div class="phone">
+                        <i class="fa fa-phone-square"></i>&nbsp;
+                        <span>热线电话1010-9666</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="menu">
+                    <div class="menuLeft">
+                        <a href="#" class="logo"></a>
+                        <ul class="typeList">
+                            <li class="selected"><a href="#" title="厦门在售二手房">在售</a></li>
+                            <li><a href="#" title="厦门成交二手房">成交</a></li>
+                            <li><a href="#" title="厦门小区二手房">小区</a></li>
+                            <li><a href="#" title="厦门房价二手房">房价</a></li>
+                            <li><a href="#" title="厦门地图找房二手房" target="_blank">地图找房</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search">
+                    <div class="input">
+                        <form id="searchForm" action="#">
+                            <input type="text" id="searchInput" placeholder="试试输入组合条件找房，如 莲花 三居">
+                            <div class="inputRightPart">
+                                <div class="save" id="savedSearchMsg">
+                                    <span id="savedSearchCount">0</span>条已保存搜索
+                                    <span id="savedSearchArrow" class="downArrow"></span>
+                                </div>
+                                <button type="submit" class="searchButton">&nbsp;<i></i>&nbsp;</button>
+                            </div>
+                        </form>
+                        <div class="searchMsg" id="searchMsgContainer" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="list-content container">
+        <div class="row">
+            <div class="search-pane">
+                <select id="selector">
+                    <option value="0">用途1</option>
+                    <option value="0">用途1</option>
+                    <option value="0">用途1</option>
+                    <option value="0">用途1</option>
+                </select>
+                <select id="selector1">
+                    <option value="0">用途1</option>
+                    <option value="0">用途1</option>
+                    <option value="0">用途1</option>
+                    <option value="0">用途1</option>
+                </select>
+            </div>
+            <div class="resultDes clearfix">
+                <h2 class="total pull-left">
+                    共找到<span> 7287 </span>套厦门二手房</h2>
+                <div class="button pull-right"></div>
+            </div>
+            <ul class="sellListContent">
+                <li class="clearfix">
+                    <a class="img " href="#" target="_blank">
+                        <img class="lj-lazy" src="https://image1.ljcdn.com/350200-inspection/2faace7f-21cd-4730-aa9e-f44ee295e1c8.jpg.280x210.jpg.232x174.jpg" alt="金林花园大三房出售， 满五少税" style="display: block;">
+                    </a>
+                    <div class="info clearfix">
+                        <div class="title">
+                            <a class="" href="#" target="_blank">金林花园大三房出售， 满五少税</a>
+                        </div>
+                        <div class="address">
+                            <div class="houseInfo">
+                                <span class="houseIcon"></span>
+                                <a href="#" target="_blank">金林花园 </a>
+                                 | 3室1厅 | 115.5平米 | 南 | 简装 | 无电梯
+                            </div>
+                        </div>
+                        <div class="flood">
+                            <div class="positionInfo">
+                                <span class="positionIcon"></span>低楼层(共6层)2005年建板楼 -
+                                <a href="#" target="_blank">金鸡亭</a>
+                            </div>
+                        </div>
+                        <div class="followInfo">
+                            <span class="starIcon"></span>12人关注 / 共18次带看 / 11个月以前发布
+                        </div>
+                        <div class="tag">
+                            <span class="taxfree">房本满五年</span>
+                            <span class="haskey">随时看房</span>
+                        </div>
+                        <div class="priceInfo">
+                            <div class="totalPrice">
+                                <span>620</span>万
+                            </div>
+                            <div class="unitPrice">
+                                <span>单价53680元/平米</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <a class="img " href="#" target="_blank">
+                        <img class="lj-lazy" src="https://image1.ljcdn.com/350200-inspection/2faace7f-21cd-4730-aa9e-f44ee295e1c8.jpg.280x210.jpg.232x174.jpg" alt="金林花园大三房出售， 满五少税" style="display: block;">
+                    </a>
+                    <div class="info clearfix">
+                        <div class="title">
+                            <a class="" href="#" target="_blank">金林花园大三房出售， 满五少税</a>
+                        </div>
+                        <div class="address">
+                            <div class="houseInfo">
+                                <span class="houseIcon"></span>
+                                <a href="#" target="_blank">金林花园 </a>
+                                | 3室1厅 | 115.5平米 | 南 | 简装 | 无电梯
+                            </div>
+                        </div>
+                        <div class="flood">
+                            <div class="positionInfo">
+                                <span class="positionIcon"></span>低楼层(共6层)2005年建板楼 -
+                                <a href="#" target="_blank">金鸡亭</a>
+                            </div>
+                        </div>
+                        <div class="followInfo">
+                            <span class="starIcon"></span>12人关注 / 共18次带看 / 11个月以前发布
+                        </div>
+                        <div class="tag">
+                            <span class="taxfree">房本满五年</span>
+                            <span class="haskey">随时看房</span>
+                        </div>
+                        <div class="priceInfo">
+                            <div class="totalPrice">
+                                <span>620</span>万
+                            </div>
+                            <div class="unitPrice">
+                                <span>单价53680元/平米</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <a class="img " href="#" target="_blank">
+                        <img class="lj-lazy" src="https://image1.ljcdn.com/350200-inspection/2faace7f-21cd-4730-aa9e-f44ee295e1c8.jpg.280x210.jpg.232x174.jpg" alt="金林花园大三房出售， 满五少税" style="display: block;">
+                    </a>
+                    <div class="info clearfix">
+                        <div class="title">
+                            <a class="" href="#" target="_blank">金林花园大三房出售， 满五少税</a>
+                        </div>
+                        <div class="address">
+                            <div class="houseInfo">
+                                <span class="houseIcon"></span>
+                                <a href="#" target="_blank">金林花园 </a>
+                                | 3室1厅 | 115.5平米 | 南 | 简装 | 无电梯
+                            </div>
+                        </div>
+                        <div class="flood">
+                            <div class="positionInfo">
+                                <span class="positionIcon"></span>低楼层(共6层)2005年建板楼 -
+                                <a href="#" target="_blank">金鸡亭</a>
+                            </div>
+                        </div>
+                        <div class="followInfo">
+                            <span class="starIcon"></span>12人关注 / 共18次带看 / 11个月以前发布
+                        </div>
+                        <div class="tag">
+                            <span class="taxfree">房本满五年</span>
+                            <span class="haskey">随时看房</span>
+                        </div>
+                        <div class="priceInfo">
+                            <div class="totalPrice">
+                                <span>620</span>万
+                            </div>
+                            <div class="unitPrice">
+                                <span>单价53680元/平米</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <a class="img " href="#" target="_blank">
+                        <img class="lj-lazy" src="https://image1.ljcdn.com/350200-inspection/2faace7f-21cd-4730-aa9e-f44ee295e1c8.jpg.280x210.jpg.232x174.jpg" alt="金林花园大三房出售， 满五少税" style="display: block;">
+                    </a>
+                    <div class="info clearfix">
+                        <div class="title">
+                            <a class="" href="#" target="_blank">金林花园大三房出售， 满五少税</a>
+                        </div>
+                        <div class="address">
+                            <div class="houseInfo">
+                                <span class="houseIcon"></span>
+                                <a href="#" target="_blank">金林花园 </a>
+                                | 3室1厅 | 115.5平米 | 南 | 简装 | 无电梯
+                            </div>
+                        </div>
+                        <div class="flood">
+                            <div class="positionInfo">
+                                <span class="positionIcon"></span>低楼层(共6层)2005年建板楼 -
+                                <a href="#" target="_blank">金鸡亭</a>
+                            </div>
+                        </div>
+                        <div class="followInfo">
+                            <span class="starIcon"></span>12人关注 / 共18次带看 / 11个月以前发布
+                        </div>
+                        <div class="tag">
+                            <span class="taxfree">房本满五年</span>
+                            <span class="haskey">随时看房</span>
+                        </div>
+                        <div class="priceInfo">
+                            <div class="totalPrice">
+                                <span>620</span>万
+                            </div>
+                            <div class="unitPrice">
+                                <span>单价53680元/平米</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="newHousePush" class="newHousePush">
+        <div class="container">
+            <div class="row">
+                <h3>推荐房屋</h3>
+                <ul>
+                    <li>
+                        <a class="pic" href="#" target="_blank">
+                            <span class="bg"></span>
+                            <img src="https://image1.ljcdn.com/xf-resblock/b634cf27-967b-454f-babe-a796a98d13ca.jpg.218x150.jpg">
+                            <div class="description">思明－云顶至尊</div>
+                        </a>
+                        <p class="area">4居&nbsp;-&nbsp;278~314平</p>
+                        <div class="price">
+                            <i>78000</i>元/平
+                        </div>
+                    </li>
+                    <li>
+                        <a class="pic" href="#" target="_blank">
+                            <span class="bg"></span>
+                            <img src="https://image1.ljcdn.com/xf-resblock/b634cf27-967b-454f-babe-a796a98d13ca.jpg.218x150.jpg">
+                            <div class="description">思明－云顶至尊</div>
+                        </a>
+                        <p class="area">4居&nbsp;-&nbsp;278~314平</p>
+                        <div class="price">
+                            <i>78000</i>元/平
+                        </div>
+                    </li>
+                    <li>
+                        <a class="pic" href="#" target="_blank">
+                            <span class="bg"></span>
+                            <img src="https://image1.ljcdn.com/xf-resblock/b634cf27-967b-454f-babe-a796a98d13ca.jpg.218x150.jpg">
+                            <div class="description">思明－云顶至尊</div>
+                        </a>
+                        <p class="area">4居&nbsp;-&nbsp;278~314平</p>
+                        <div class="price">
+                            <i>78000</i>元/平
+                        </div>
+                    </li>
+                    <li>
+                        <a class="pic" href="#" target="_blank">
+                            <span class="bg"></span>
+                            <img src="https://image1.ljcdn.com/xf-resblock/b634cf27-967b-454f-babe-a796a98d13ca.jpg.218x150.jpg">
+                            <div class="description">思明－云顶至尊</div>
+                        </a>
+                        <p class="area">4居&nbsp;-&nbsp;278~314平</p>
+                        <div class="price">
+                            <i>78000</i>元/平
+                        </div>
+                    </li>
+                    <li>
+                        <a class="pic" href="#" target="_blank">
+                            <span class="bg"></span>
+                            <img src="https://image1.ljcdn.com/xf-resblock/b634cf27-967b-454f-babe-a796a98d13ca.jpg.218x150.jpg">
+                            <div class="description">思明－云顶至尊</div>
+                        </a>
+                        <p class="area">4居&nbsp;-&nbsp;278~314平</p>
+                        <div class="price">
+                            <i>78000</i>元/平
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="f-title">
+                    <div class="pull-left">
+                        <ul>
+                            <li><a href="#" rel="nofollow" target="_blank">了解链家</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">关于链家</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">联系我们</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">加入我们</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">隐私声明</a></li>
+                            <li><a href="#" target="_blank">网站地图</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">友情链接</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">管理员登录</a></li>
+                        </ul>
+                    </div>
+                    <div class="pull-right">官方客服 1010 9666</div>
+                </div>
+                <div class="link-box clearfix">
+                    <div class="pull-left">
+                        <div class="tab"><span class="hover">房贷计算器</span></div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="copyright pull-left">链家网（北京）科技有限公司 | 网络经营许可证 京ICP备16057509号-2 | © Copyright©2010-2018
+                        链家网Lianjia.com版权所有
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<script src="../plugins/jquery/jquery.min.js"></script>
+<script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="../plugins/layui/layui.all.js"></script>
+<script src="../plugins/validator/validator.min.js"></script>
+<script src="../plugins/sweetalert/sweetalert2.all.min.js"></script>
+<script src="../plugins/sumoselect/jquery.sumoselect.min.js"></script>
+
+<script src="../js/common.js"></script>
+<script>
+    $(function () {
+        $('#selector').SumoSelect();
+        $('#selector1').SumoSelect();
+    });
+</script>
+
+</body>
+</html>

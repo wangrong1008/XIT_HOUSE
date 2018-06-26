@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购房小工具</title>
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../css/plugins.reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body class="loaded">
+<div class="wrapper">
+    <header class="top-wrapper">
+        <div class="container">
+            <div class="row">
+                <ul class="channelList">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="#">二手房</a></li>
+                    <li><a href="#">新房</a></li>
+                    <li><a href="#">租房</a></li>
+                    <li><a href="#">房价</a></li>
+                    <li><a href="tool.html" target="_blank">工具</a></li>
+                    <li><a href="#" target="_blank">发布房源</a></li>
+                </ul>
+                <div class="navbar-right">
+                    <div class="login" id="userInfoContainer">
+                        <i class="fa fa-user-circle"></i>&nbsp;
+                        <a id="userNameContainer" href="#" rel="nofollow">用户名</a>&nbsp;&nbsp;
+                        <a id="userSignOut" href="#">退出</a>
+                    </div>
+                    <div class="phone">
+                        <i class="fa fa-phone-square"></i>&nbsp;
+                        <span>热线电话1010-9666</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="toolHeader">
+        <div class="logoRow">
+            <div class="toolLogo"></div>
+        </div>
+        <div class="toolTitle">
+            <div class="mainTitle">购房工具</div>
+            <div class="subTitle">复杂的房贷税费计算，链家购房工具帮你解决</div>
+        </div>
+    </div>
+    <div class="mainContent">
+        <ol class="tab toolsTag">
+            <li class="active" data-target="housingLoan"><a href="javascript:">房贷计算器</a></li>
+            <li data-target="taxes"><a href="javascript:">新房税费计算器</a></li>
+        </ol>
+        <div class="toolContent clearfix">
+            <div class="tab-pane" data-target="housingLoan">
+                <div class="toolLeft">
+                    <div class="calculatorItem">
+                        <label class="itemTitle">贷款类型</label>
+                        <div class="selectItem">
+                            <span>商业贷款</span><span class="selectItemIcon"></span>
+                            <ol class="selectItemOptions">
+                                <li data-value="0">商业贷款</li>
+                                <li data-value="1">公积金贷款</li>
+                                <li data-value="2">组合贷款</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="calculatorItem">
+                        <label class="itemTitle">计算方式</label>
+                        <div class="selectItem">
+                            <span>按贷款总额</span><span class="selectItemIcon"></span>
+                            <ol class="selectItemOptions">
+                                <li data-value="0">按贷款总额</li>
+                                <li data-value="1">按房屋总价</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="calculatorItem">
+                        <label class="itemTitle">贷款总额</label>
+                        <div class="inputItem">
+                            <input type="text" value="" placeholder="请输入大于0的数字"><span class="inputItemUnit">万元</span>
+                        </div>
+                    </div>
+                    <div class="calculatorItem">
+                        <label class="itemTitle">商贷年利率</label>
+                        <div class="mixItem">
+                            <div class="mixItemSelect">
+                                <span>最新基准利率</span><span class="selectItemIcon"></span>
+                                <ol class="selectItemOptions">
+                                    <li data-value="0.7">7折</li>
+                                    <li data-value="0.75">7.5折</li>
+                                    <li data-value="0.8">8折</li>
+                                    <li data-value="0.85">8.5折</li>
+                                    <li data-value="0.9">9折</li>
+                                    <li data-value="1">最新基准利率</li>
+                                    <li data-value="1.05">1.05倍</li>
+                                    <li data-value="1.1">1.1倍</li>
+                                    <li data-value="1.2">1.2倍</li>
+                                    <li data-value="1.3">1.3倍</li>
+                                </ol>
+                            </div>
+                            <div class="mixItemInput">
+                                <input type="text" value=""><span class="inputItemUnit">%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calculatorItem">
+                        <label class="itemTitle">贷款期限</label>
+                        <div class="selectItem">
+                            <span>30年</span><span class="selectItemIcon"></span>
+                            <ol class="selectItemOptions">
+                                <li data-value="30">30年</li>
+                                <li data-value="25">25年</li>
+                                <li data-value="20">20年</li>
+                                <li data-value="15">15年</li>
+                                <li data-value="10">10年</li>
+                                <li data-value="5">5年</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="calculatorBtn">
+                        <button>开始计算</button>
+                    </div>
+                </div>
+                <div class="toolRight">
+                    <div class="resultPanel">
+                        <div class="panelTitle">
+                            <div class="repaymentType">类型</div>
+                            <div class="elp">等额本息还款</div>
+                            <div class="epp">等额本金还款</div>
+                        </div>
+                        <div class="panelBody">
+                            <div class="resultItem">
+                                <div class="repaymentTypeItem">月供</div>
+                                <div class="elpItem">
+                                    <span class="resultNum">0</span><span>元</span>
+                                </div>
+                                <div class="eppItem">
+                                    <div class="eppResultItem">
+                                        <span class="resultNum">0</span><span>元</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="eppMonthReduceItem">
+                                <span>每月递减</span><span class="reduceNum">0</span><span>元</span>
+                            </div>
+                            <div class="resultItem">
+                                <div class="repaymentTypeItem">还款月数</div>
+                                <div class="elpItem">
+                                    <span class="resultNum">0</span><span>月</span>
+                                </div>
+                                <div class="eppItem">
+                                    <span class="resultNum">0</span><span>月</span>
+                                </div>
+                            </div>
+                            <div class="resultItem">
+                                <div class="repaymentTypeItem">总利息</div>
+                                <div class="elpItem">
+                                    <span class="resultNum">0</span><span>元</span>
+                                </div>
+                                <div class="eppItem">
+                                    <span class="resultNum">0</span><span>元</span>
+                                </div>
+                            </div>
+                            <div class="resultItem">
+                                <div class="repaymentTypeItem">本息合计</div>
+                                <div class="elpItem">
+                                    <span class="resultNum">0</span><span>元</span>
+                                </div>
+                                <div class="eppItem">
+                                    <span class="resultNum">0</span><span>元</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" data-target="taxes">
+                <div class="toolLeft">
+                    <div class="calculatorItem">
+                        <label class="itemTitle">住宅类型</label>
+                        <div class="selectItem">
+                            <span>非普通住宅</span><span class="selectItemIcon"></span>
+                            <ol class="selectItemOptions">
+                                <li data-value="0">普通住宅</li>
+                                <li data-value="1">非普通住宅</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="calculatorItem">
+                        <label class="itemTitle">住宅面积</label>
+                        <div class="inputItem">
+                            <input type="text" value=""><span class="inputItemUnit">平米</span>
+                        </div>
+                    </div>
+                    <div class="calculatorItem">
+                        <label class="itemTitle">房屋总价</label>
+                        <div class="inputItem">
+                            <input type="text" value=""><span class="inputItemUnit">万元</span>
+                        </div>
+                    </div>
+                    <div class="calculatorItem">
+                        <label class="itemTitle">是否为首套</label>
+                        <div class="selectItem">
+                            <span>首套</span><span class="selectItemIcon"></span>
+                            <ol class="selectItemOptions">
+                                <li data-value="0">首套</li>
+                                <li data-value="1">二套房</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="calculatorBtn">
+                        <button>开始计算</button>
+                    </div>
+                </div>
+                <div class="toolRight">
+                    <div class="resultPanel">
+                        <div class="panelTitle">
+                            <div class="taxType">类型</div>
+                            <div class="taxInfo">税费详情</div>
+                        </div>
+                        <div class="panelBody">
+                            <div class="resultItem">
+                                <div class="taxTypeItem">税费合计</div>
+                                <div class="taxInfoItem">--</div>
+                            </div>
+                            <div class="resultItem">
+                                <div class="taxTypeItem">契税</div>
+                                <div class="taxInfoItem">--</div>
+                            </div>
+                            <div class="resultItem">
+                                <div class="taxTypeItem">交易手续费</div>
+                                <div class="taxInfoItem">--</div>
+                            </div>
+                            <div class="resultItem">
+                                <div class="taxTypeItem">维修基金</div>
+                                <div class="taxInfoItem">--</div>
+                            </div>
+                            <div class="resultItem">
+                                <div class="taxTypeItem">权属登记费</div>
+                                <div class="taxInfoItem">--</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="toolRightInfo">
+                        <div class="alertInfo">仅供参考，具体以实际缴纳金额为准</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="f-title">
+                    <div class="pull-left">
+                        <ul>
+                            <li><a href="#" rel="nofollow" target="_blank">了解链家</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">关于链家</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">联系我们</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">加入我们</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">隐私声明</a></li>
+                            <li><a href="#" target="_blank">网站地图</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">友情链接</a></li>
+                            <li><a href="#" rel="nofollow" target="_blank">管理员登录</a></li>
+                        </ul>
+                    </div>
+                    <div class="pull-right">官方客服 1010 9666</div>
+                </div>
+                <div class="link-box clearfix">
+                    <div class="pull-left">
+                        <div class="tab"><span class="hover">房贷计算器</span></div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="copyright pull-left">链家网（北京）科技有限公司 | 网络经营许可证 京ICP备16057509号-2 | © Copyright©2010-2018 链家网Lianjia.com版权所有</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<script src="../plugins/jquery/jquery.min.js"></script>
+<script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="../plugins/layui/layui.all.js"></script>
+<script src="../plugins/validator/validator.min.js"></script>
+<script src="../plugins/sweetalert/sweetalert2.all.min.js"></script>
+
+<script src="../js/common.js"></script>
+<script>
+    $(function () {
+        $('.selectItem').on('click', function () {
+            t.stopPropagation();
+            this.setState({isExpand: !this.state.isExpand});
+        });
+    })
+</script>
+</body>
+</html>
